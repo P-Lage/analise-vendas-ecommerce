@@ -1,30 +1,28 @@
 import pandas as pd
 
+# --- Carregamento dos dados ---
 df = pd.read_csv("data.csv", encoding="ISO-8859-1")
 
 print("Primeiras linhas do dataset:")
-print(df.head())
+print(df.head(), "\n")
 
-print("\nInformações do dataset:")
-print(df.info())
-
+# --- Informações gerais ---
+print("Informações do dataset:")
+df.info()
 print("\nEstatísticas descritivas:")
-print(df.describe())
+print(df.describe(), "\n")
 
-# --- LIMPEZA DOS DADOS ---
+# --- Checagem de valores ausentes ---
+print("Valores ausentes por coluna:")
+print(df.isnull().sum(), "\n")
 
-print("\nValores ausentes por coluna:")
-print(df.isnull().sum())
-
+# --- Limpeza dos dados ---
 df = df.dropna(subset=["CustomerID"])
-
 df = df.drop_duplicates()
-
 df["InvoiceDate"] = pd.to_datetime(df["InvoiceDate"])
-
-print("\nTipos de dados após conversão:")
-print(df.dtypes)
-
 df = df.reset_index(drop=True)
 
-print("\nApós limpeza, dataset possui", len(df), "linhas.")
+# --- Resultado após limpeza ---
+print("Tipos de dados após conversão:")
+print(df.dtypes, "\n")
+print(f"Após limpeza, dataset possui {len(df)} linhas.")
