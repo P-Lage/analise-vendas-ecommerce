@@ -21,10 +21,10 @@ Contém informações sobre transações, produtos, quantidades, preços e clien
 O ticket médio por cliente foi calculado a partir do valor total gasto dividido pelo número de compras.
 
 ### Top 10 produtos mais vendidos
-![Top 10 Produtos](imagens/top_produtos.png)
+![Top 10 Produtos](imagens/top_produtos_vendidos.png)
 
 ### Países com maior valor de vendas
-![Top Países](imagens/top_paises.png)
+![Top Países](imagens/top_paises_valor_vendas.png)
 
 ---
 
