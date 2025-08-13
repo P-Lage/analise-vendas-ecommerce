@@ -1,0 +1,1 @@
+print("Iniciando minha análise de dados de e-commerce...")
