@@ -17,14 +17,44 @@ Contém informações sobre transações, produtos, quantidades, preços e clien
 
 ## 📌 Principais Resultados
 
-### Ticket médio
+### 🎯 Ticket médio
 O ticket médio por cliente foi calculado a partir do valor total gasto dividido pelo número de compras.
 
-### Top 10 produtos mais vendidos
-![Top 10 Produtos](imagens/top_produtos_vendidos.png)
+---
 
-### Países com maior valor de vendas
-![Top Países](imagens/top_paises_valor_vendas.png)
+### 🏆 Top 10 produtos mais vendidos
+![Top 10 Produtos Mais Vendidos](imagens/top_produtos_vendidos.png)
+
+---
+
+### 💰 Top 10 produtos mais lucrativos
+![Top 10 Produtos Mais Lucrativos](imagens/produtos_mais_lucrativos.png)
+
+---
+
+### 🌍 Top 10 países por valor de vendas
+![Top Países por Valor de Vendas](imagens/top_paises_valor_vendas.png)
+
+---
+
+### 📦 Top 10 países por número de pedidos
+![Top Países por Número de Pedidos](imagens/pedidos_por_pais.png)
+
+---
+
+### 📈 Vendas mensais
+![Vendas Mensais](imagens/vendas_mensais.png)
+
+---
+
+### 🕒 Distribuição de vendas por hora do dia
+![Vendas por Hora](imagens/vendas_por_hora.png)
+
+---
+
+### 💳 Distribuição do valor total por pedido
+![Distribuição do Valor por Pedido](imagens/distribuicao_valor_pedido.png)
+
 
 ---
 
