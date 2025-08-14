@@ -1,64 +1,49 @@
-# 📊 Análise de Vendas de E-commerce
+# 📊 Análise Exploratória de Vendas em E-commerce
 
-Este projeto realiza uma **análise exploratória de dados** de um e-commerce, respondendo perguntas de negócio como:
-- Qual é o ticket médio por cliente?
-- Quais são os produtos mais vendidos?
-- Quais países geram mais receita?
+## Objetivo
 
-O objetivo é aplicar técnicas básicas de **limpeza, exploração e visualização de dados** usando Python, Pandas, Matplotlib e Seaborn.
+Este projeto tem como objetivo realizar uma **análise exploratória de dados (EDA)** de um e-commerce, identificando padrões de compra, produtos e países mais relevantes, além de fornecer insights para estratégias comerciais e operacionais.
 
 ---
 
-## 🗂 Dataset
-O conjunto de dados utilizado foi obtido no [Kaggle - E-commerce Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data).  
-Contém informações sobre transações, produtos, quantidades, preços e clientes.
+## Dataset
+
+- **Fonte:** [Kaggle - E-commerce Data](https://www.kaggle.com/datasets/carrie1/ecommerce-data)
+- **Descrição:** Dados transacionais de um e-commerce do Reino Unido, contendo informações sobre pedidos, clientes, produtos, valores, datas e países.
 
 ---
 
-## 📌 Principais Resultados
+## Como rodar o projeto
 
-### 🎯 Ticket médio
-O ticket médio por cliente foi calculado a partir do valor total gasto dividido pelo número de compras.
+1. **Clone o repositório:**
+    ```bash
+    git clone https://github.com/SEU-USUARIO/analise-vendas-ecommerce.git
+    cd analise-vendas-ecommerce
+    ```
 
----
+2. **Crie e ative um ambiente virtual:**
+    ```bash
+    python -m venv venv
+    # Windows
+    venv\Scripts\activate
+    # Linux/Mac
+    source venv/bin/activate
+    ```
 
-### 🏆 Top 10 produtos mais vendidos
-![Top 10 Produtos Mais Vendidos](imagens/top_produtos_vendidos.png)
+3. **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
 
----
-
-### 💰 Top 10 produtos mais lucrativos
-![Top 10 Produtos Mais Lucrativos](imagens/produtos_mais_lucrativos.png)
-
----
-
-### 🌍 Top 10 países por valor de vendas
-![Top Países por Valor de Vendas](imagens/top_paises_valor_vendas.png)
-
----
-
-### 📦 Top 10 países por número de pedidos
-![Top Países por Número de Pedidos](imagens/pedidos_por_pais.png)
-
----
-
-### 📈 Vendas mensais
-![Vendas Mensais](imagens/vendas_mensais.png)
+4. **Abra o notebook:**
+    ```bash
+    jupyter notebook analise-exploratoria.ipynb
+    ```
 
 ---
 
-### 🕒 Distribuição de vendas por hora do dia
-![Vendas por Hora](imagens/vendas_por_hora.png)
+## Stack utilizada
 
----
-
-### 💳 Distribuição do valor total por pedido
-![Distribuição do Valor por Pedido](imagens/distribuicao_valor_pedido.png)
-
-
----
-
-## 🚀 Tecnologias utilizadas
 - Python 3
 - Pandas
 - Matplotlib
@@ -67,29 +52,49 @@ O ticket médio por cliente foi calculado a partir do valor total gasto dividido
 
 ---
 
-## 📂 Como rodar o projeto localmente
+## Resumo dos principais achados
 
-1. Clone o repositório:
-```bash
-git clone https://github.com/SEU-USUARIO/analise-vendas-ecommerce.git
-cd analise-vendas-ecommerce
-```
+### 🎯 Ticket médio por cliente
+O ticket médio indica quanto, em média, cada cliente gasta por compra, sendo um dos principais indicadores de performance do e-commerce.
 
-2. Crie um ambiente virtual e ative:
-```bash
-python -m venv venv
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-```
+---
 
-3. Instale as dependências:
-```bash
-pip install -r requirements.txt
-```
+### 🏆 Top 10 produtos mais vendidos
+Produtos mais populares em quantidade, essenciais para gestão de estoque e campanhas de marketing.
 
-4. Abra o notebook:
-```bash
-jupyter notebook analise-exploratoria.ipynb
-```
+![Top 10 Produtos Mais Vendidos](imagens/top_produtos_vendidos.png)
+
+---
+
+### 💰 Top 10 produtos mais lucrativos
+Produtos que mais geram receita, importantes para estratégias de rentabilidade.
+
+![Top 10 Produtos Mais Lucrativos](imagens/produtos_mais_lucrativos.png)
+
+---
+
+### 🌍 Top 10 países por valor de vendas
+Análise dos países que mais contribuem para o faturamento, útil para direcionamento de esforços comerciais.
+
+![Top Países por Valor de Vendas](imagens/top_paises_valor_vendas.png)
+
+---
+
+### 📈 Vendas mensais
+Evolução das vendas ao longo do tempo, permitindo identificar tendências e sazonalidades.
+
+![Vendas Mensais](imagens/vendas_mensais.png)
+
+---
+
+## Próximos passos
+
+- Implementar análise de clusters de clientes (segmentação avançada)
+- Explorar sazonalidade e tendências com séries temporais
+- Desenvolver dashboards interativos (ex: Power BI, Streamlit)
+- Avaliar impacto de devoluções/cancelamentos em diferentes produtos e países
+- Propor recomendações de negócio baseadas nos insights encontrados
+
+---
+
+> Projeto desenvolvido para fins de estudo e demonstração de análise de dados em
